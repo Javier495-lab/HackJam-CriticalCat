@@ -846,8 +846,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Juego del coche y el bicho
-  metroPackageVersion: 
+  metroPackageName: Juegodelcocheyelbicho
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -855,7 +855,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Juego del coche y el bicho
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Juego del coche y el bicho
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -922,7 +922,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: f2580287-4d19-46f5-8186-9f4b17f0a09c
   framebufferDepthMemorylessMode: 0
