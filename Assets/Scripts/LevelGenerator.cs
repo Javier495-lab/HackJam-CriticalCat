@@ -23,7 +23,6 @@ public class LevelGenerator : MonoBehaviour
 
 	void Start()
 	{
-		activeChunks = new List<GameObject>(activeChunksLenght);
 		PreloadChunks();
 		GenerateStartChunks();
 	}
@@ -49,14 +48,13 @@ public class LevelGenerator : MonoBehaviour
 
 	private void PreloadChunks()
 	{
-		hiddenChunks = new List<GameObject>(ChunkList.Count * 2);
 		for (int i = 0; i < ChunkList.Count; i++)
 		{
 			for (int x = 0; x < 2; x++)
 			{
-				GameObject newChunk = Instantiate(ChunkList[x]);
+				GameObject newChunk = Instantiate(ChunkList[i]);
 				newChunk.SetActive(false);
-				hiddenChunks.Add(newChunk);			
+				hiddenChunks.Add(newChunk);
 			}
 		}
 	}
