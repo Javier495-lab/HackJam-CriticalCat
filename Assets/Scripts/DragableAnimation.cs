@@ -262,7 +262,7 @@ public class DragableAnimation : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetFloat(parameterName, currentProgress);
+//            animator.SetFloat(parameterName, currentProgress);
         }
 
         if (progressText != null)

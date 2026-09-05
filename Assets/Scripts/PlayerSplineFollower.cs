@@ -20,6 +20,7 @@ public class PlayerSplineFollower : MonoBehaviour
 	[SerializeField] private Chunk currentChunk;
 	[SerializeField] private SplineContainer spline;
 	public bool isDead = false;
+	[SerializeField] private float switchSplineThreshold = 0.99f;
 	
 	void Start()
 	{
@@ -35,17 +36,19 @@ public class PlayerSplineFollower : MonoBehaviour
 		PlayerFollowSpline();
 	}
 
+	public float GetSpeedMultiplier()
+	{
+		return speedMultiplier;
+	}
+
 	private void FindNextSpline()
 	{
 		var activeChunks = levelGenerator.GetActiveChunks();
-		if (currentDistance > 1f)
-		{
 			int currentIndex = activeChunks.FindIndex(chunk =>
 				chunk.GetComponent<Chunk>() == currentChunk);
-			int nextIndex = currentIndex + 1;
+		int nextIndex = currentIndex + 1;
 				
-			SwitchToSpline(activeChunks[nextIndex].GetComponent<Chunk>());
-		}
+		SwitchToSpline(activeChunks[nextIndex].GetComponent<Chunk>());
 	}
 
 	private void PlayerFollowSpline()
@@ -67,7 +70,7 @@ public class PlayerSplineFollower : MonoBehaviour
 		}
 
 		// If the end of the spline is reached, loop back to the beginning
-		if (currentDistance >= 1f)
+		if (currentDistance >= switchSplineThreshold)
 		{
 			FindNextSpline();
 		}
@@ -93,5 +96,6 @@ public class PlayerSplineFollower : MonoBehaviour
 	{
 		float deltaX = xTargetPosition.position.x - runner.transform.position.x;
 		speedMultiplier = velocityCurve.Evaluate(deltaX);
+		// Debug.Log("Delta X: " + deltaX);
 	}
 }

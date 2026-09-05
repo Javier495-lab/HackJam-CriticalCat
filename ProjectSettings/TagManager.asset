@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Indication
   - Interactuable
+  - JumpTrigger
   layers:
   - Default
   - TransparentFX
