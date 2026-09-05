@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9610734b804c2266e8f7f25e79eacf53, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -167,6 +167,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.55
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df72a1d3310f00f6a0f2beab4c3ce8c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 846dfcbe933869a62954e7e309c9a78d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 7df72a1d3310f00f6a0f2beab4c3ce8c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df72a1d3310f00f6a0f2beab4c3ce8c, type: 3}
       propertyPath: m_Name
       value: SM_casa2l
@@ -232,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.633
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9a125b79422eae426b0019a765e5b335, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 164506aaf7a6e67e993d6c4fa3bdcc8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 9a125b79422eae426b0019a765e5b335, type: 3}
       propertyPath: m_Name
       value: SM_Ventana
@@ -375,6 +387,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 178.794
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 846dfcbe933869a62954e7e309c9a78d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
       propertyPath: m_Name
       value: SM_Casa1 (1)
@@ -606,6 +626,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.085
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: be11942ae2ed29c7d9e159e824f3caef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 846dfcbe933869a62954e7e309c9a78d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: be11942ae2ed29c7d9e159e824f3caef, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: be11942ae2ed29c7d9e159e824f3caef, type: 3}
       propertyPath: m_Name
       value: SM_casa3l
@@ -706,6 +734,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 178.794
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 846dfcbe933869a62954e7e309c9a78d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: 0ab46fab64d06838c83ad33b0a2d61f9, type: 3}
       propertyPath: m_Name
       value: SM_Casa1
@@ -810,7 +846,7 @@ Transform:
   m_GameObject: {fileID: 694752709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.8, y: 1, z: -7.7}
+  m_LocalPosition: {x: 7, y: 1, z: -7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1121,13 +1157,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820041014}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.38910052, y: -0.23689093, z: 0.10425915, w: 0.8840891}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 47.51, y: -30, z: 0}
 --- !u!114 &820041017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,7 +1327,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4b7660c274afbf3c88199ad3952779be, type: 2}
+  - {fileID: 2100000, guid: 057a6147d935c65d3850d61e9e9eb2d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1386,6 +1422,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -5.094
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 53fa0841520690eff8cea48db6e83874, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 846dfcbe933869a62954e7e309c9a78d, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 53fa0841520690eff8cea48db6e83874, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: 53fa0841520690eff8cea48db6e83874, type: 3}
       propertyPath: m_Name
       value: SM_casa4l
@@ -1648,6 +1692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 044ff3e204864e022b523e2a5e05245a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: 044ff3e204864e022b523e2a5e05245a, type: 3}
       propertyPath: m_Name
       value: SM_tendall
@@ -1705,6 +1753,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f886d171b84117682acd664bc87aa92d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0914230bd3635df0fb035c80bb6ab43b, type: 2}
     - target: {fileID: 919132149155446097, guid: f886d171b84117682acd664bc87aa92d, type: 3}
       propertyPath: m_Name
       value: SM_senal
