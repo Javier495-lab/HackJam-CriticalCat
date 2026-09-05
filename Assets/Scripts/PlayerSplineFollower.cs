@@ -32,6 +32,11 @@ public class PlayerSplineFollower : MonoBehaviour
 		PlayerFollowSpline();
 	}
 
+	public float GetSpeedMultiplier()
+	{
+		return speedMultiplier;
+	}
+
 	private void FindNextSpline()
 	{
 		var activeChunks = levelGenerator.GetActiveChunks();
@@ -90,5 +95,6 @@ public class PlayerSplineFollower : MonoBehaviour
 	{
 		float deltaX = xTargetPosition.position.x - runner.transform.position.x;
 		speedMultiplier = velocityCurve.Evaluate(deltaX);
+		// Debug.Log("Delta X: " + deltaX);
 	}
 }

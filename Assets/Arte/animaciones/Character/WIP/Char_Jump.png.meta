@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b9241e91c824d33d9949734a4159ded
+guid: 60485c6543b207b48ad29676182ae6ac
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,12 +95,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Char_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 924
+        width: 332
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e89a636b31687442a9c00ac63eca01c
+      internalID: 939940242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6e9acaf01d1c5d4abdc52dcc463b637
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +130,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Char_Jump_0: 939940242
+      Char_Jump_1: 1548703399
+      Char_Jump_10: 801176121
+      Char_Jump_11: -214208207
+      Char_Jump_12: -866934463
+      Char_Jump_13: -1984988682
+      Char_Jump_14: -616631992
+      Char_Jump_2: 1662699200
+      Char_Jump_3: 804342069
+      Char_Jump_4: 666059714
+      Char_Jump_5: 1507969442
+      Char_Jump_6: -411817851
+      Char_Jump_7: -1007730968
+      Char_Jump_8: -1737295487
+      Char_Jump_9: 317687043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
