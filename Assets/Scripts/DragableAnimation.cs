@@ -61,13 +61,15 @@ public class DragableAnimation : MonoBehaviour
 
     private float lastCircleAngle;
     private bool isAutocompleting = false;
-    private bool isCompleted = false;
+    public bool isCompleted = false;
+    private Renderer targetRenderer;
 
     private Collider objectCollider;
 
     private void Awake()
     {
         objectCollider = GetComponent<Collider>();
+        targetRenderer = GetComponent<Renderer>();
     }
 
     private void Start()
@@ -235,6 +237,7 @@ public class DragableAnimation : MonoBehaviour
         isCompleted = true;
         isAutocompleting = false;
         currentProgress = 1.0f;
+        targetRenderer.material.color = Color.white;
 
         UpdateAnimationAndUI();
 

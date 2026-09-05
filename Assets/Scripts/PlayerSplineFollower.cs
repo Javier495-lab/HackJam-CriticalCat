@@ -19,9 +19,11 @@ public class PlayerSplineFollower : MonoBehaviour
 	[Header("Splines")]
 	[SerializeField] private Chunk currentChunk;
 	[SerializeField] private SplineContainer spline;
+	public bool isDead = false;
 	
 	void Start()
 	{
+		isDead = false;
 		currentChunk = levelGenerator.GetActiveChunks()[0].GetComponent<Chunk>();
 		spline = currentChunk.GetSpline();
 	}
@@ -29,6 +31,7 @@ public class PlayerSplineFollower : MonoBehaviour
 	void Update()
 	{
 		CalculateSpeed();
+		if (isDead) return;
 		PlayerFollowSpline();
 	}
 
