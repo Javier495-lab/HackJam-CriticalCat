@@ -4,51 +4,58 @@ using System.Collections;
 public class InputIndicator : MonoBehaviour
 {
     [Header("Configuración del Sprite")]
-    public SpriteRenderer hintSpriteRenderer;
-    [Tooltip("Distancia relativa a la que flotará el indicador sobre el prefab")]
-    [SerializeField] private Vector3 offset = new Vector3(0, 1.5f, 0);
+    public SpriteRenderer hintSpriteRenderer; // Mantenemos tu variable pública
+    //[SerializeField] private Vector3 offset = new Vector3(0, 0, 0);
 
     [Header("Detección")]
-    [Tooltip("Tag del objeto que activa la señal (ej: Player)")]
-    [SerializeField] private string triggerTag = "Indication";
+    [SerializeField] private string triggerTag = "Player";
 
     [Header("Tiempos de Animación")]
-    [SerializeField] private float blinkInterval = 0.12f;  // Frecuencia del parpadeo
-    [SerializeField] private int blinkCount = 3;           // Veces que parpadea
-    [SerializeField] private float displayDuration = 2.5f; // Tiempo que permanece visible
+    [SerializeField] private float blinkInterval = 0.12f;
+    [SerializeField] private int blinkCount = 3;
+    [SerializeField] private float displayDuration = 2.5f;
 
     private Camera mainCamera;
     private bool isShowing = false;
     private Coroutine activeCoroutine;
 
-    private void Start()
+    private void Awake()
     {
         mainCamera = Camera.main;
-        hintSpriteRenderer = GetComponent<SpriteRenderer>();
 
+        // Si no está asignado en el Inspector, busca el SpriteRenderer en los objetos hijos automáticamente
+        if (hintSpriteRenderer == null)
+        {
+            hintSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
+    }
+
+    private void Start()
+    {
         if (hintSpriteRenderer != null)
         {
-            // Ocultamos el indicador al arrancar
-            SetSpriteAlpha(0f);
+            SetSpriteAlpha(0f); // Se oculta correctamente al iniciar
+        }
+        else
+        {
+            Debug.LogWarning($"[InteractionIndicator] No se encontró ningún SpriteRenderer en los hijos de {gameObject.name}");
         }
     }
 
     private void LateUpdate()
     {
-        // Solo ejecutamos el seguimiento y orientación mientras la señal esté visible
         if (!isShowing || hintSpriteRenderer == null) return;
 
-        // 1. Posicionamiento dinámico sobre el prefab
-        hintSpriteRenderer.transform.position = transform.position + offset;
+        // Mantener posición y Billboard mirando a la cámara
+        //
+        //hintSpriteRenderer.transform.position = transform.position + offset;
 
-        // 2. Efecto Billboard: Mira hacia la cámara en todo momento
         if (mainCamera != null)
         {
             hintSpriteRenderer.transform.rotation = mainCamera.transform.rotation;
         }
     }
 
-    // Detección para Físicas 3D
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(triggerTag) && !isShowing)
@@ -57,12 +64,17 @@ public class InputIndicator : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag(triggerTag) && !isShowing)
+        {
+            TriggerIndicator();
+        }
+    }
+
     private void TriggerIndicator()
     {
-        if (activeCoroutine != null)
-        {
-            StopCoroutine(activeCoroutine);
-        }
+        if (activeCoroutine != null) StopCoroutine(activeCoroutine);
         activeCoroutine = StartCoroutine(ShowIndicatorSequence());
     }
 
@@ -70,7 +82,6 @@ public class InputIndicator : MonoBehaviour
     {
         isShowing = true;
 
-        // 1. Parpadeo inicial
         for (int i = 0; i < blinkCount; i++)
         {
             SetSpriteAlpha(1f);
@@ -79,11 +90,9 @@ public class InputIndicator : MonoBehaviour
             yield return new WaitForSeconds(blinkInterval);
         }
 
-        // 2. Mantener totalmente visible
         SetSpriteAlpha(1f);
         yield return new WaitForSeconds(displayDuration);
 
-        // 3. Desaparición suave (Fade Out)
         float fadeDuration = 0.4f;
         float elapsed = 0f;
 

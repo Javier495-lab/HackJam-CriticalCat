@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -6,16 +8,23 @@ public class Chunk : MonoBehaviour
 	[SerializeField] private Transform startPoint;
 	[SerializeField] private Transform endPoint;
 	[SerializeField] private SplineContainer splineContainer;
+    public List<DragableAnimation> listaDeInteractuables = new List<DragableAnimation>();
 
-	private void Awake()
+    private void Awake()
 	{
 		if (splineContainer == null)
 		{
 			splineContainer = GetComponentInChildren<SplineContainer>();
 		}
 	}
+    private void Start()
+    {
+        DragableAnimation[] componentes = GetComponentsInChildren<DragableAnimation>();
 
-	public SplineContainer GetSpline()
+        listaDeInteractuables = new List<DragableAnimation>(componentes);
+    }
+
+    public SplineContainer GetSpline()
 	{
 		return splineContainer;
 	}
@@ -28,5 +37,13 @@ public class Chunk : MonoBehaviour
 	public Vector3 GetEndPoint()
 	{
 		return endPoint.position;
+	}
+
+	public void OnEnable()
+	{
+		foreach (DragableAnimation interactivo in listaDeInteractuables)
+		{
+			interactivo.ResetState();
+		}
 	}
 }

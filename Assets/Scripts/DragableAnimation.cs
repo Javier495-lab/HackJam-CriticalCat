@@ -65,11 +65,25 @@ public class DragableAnimation : MonoBehaviour
     private Renderer targetRenderer;
 
     private Collider objectCollider;
+    private Color originalColor;
 
     private void Awake()
     {
         objectCollider = GetComponent<Collider>();
-        targetRenderer = GetComponent<Renderer>();
+
+        if (targetRenderer == null)
+        {
+            targetRenderer = GetComponent<Renderer>();
+        }
+
+        // Guardamos el color original para poder restaurarlo después
+        if (targetRenderer != null)
+        {
+            originalColor = targetRenderer.material.color;
+
+            // NOTA: Si estás en URP y usas _BaseColor, usa esta línea:
+            // originalColor = targetRenderer.material.GetColor("_BaseColor");
+        }
     }
 
     private void Start()
@@ -255,6 +269,37 @@ public class DragableAnimation : MonoBehaviour
         {
             progressText.text = $"Apertura: {(currentProgress * 100f):F0}%";
         }
+    }
+
+    public void ResetState()
+    {
+        // 1. Detener corrutinas activas (por si estaba autocompletando)
+        StopAllCoroutines();
+
+        // 2. Resetear variables de estado
+        isCompleted = false;
+        isAutocompleting = false;
+        currentProgress = 0f;
+
+        // 3. Forzar actualización del Animator (Blend Tree a 0) y del UI
+        UpdateAnimationAndUI();
+
+        // 4. Devolver el material a su color original
+        if (targetRenderer != null)
+        {
+            targetRenderer.material.color = originalColor;
+
+            // NOTA: Si usas URP, usa esta línea en su lugar:
+            // targetRenderer.material.SetColor("_BaseColor", originalColor);
+        }
+
+        // 5. Rehabilitar el collider por si se había desactivado al completar
+        if (objectCollider != null)
+        {
+            objectCollider.enabled = true;
+        }
+
+        Debug.Log($"[InteractiveAnimation] Objeto {gameObject.name} reseteado a 0.");
     }
 
     public InteractionType CurrentInteractionType => interactionType;

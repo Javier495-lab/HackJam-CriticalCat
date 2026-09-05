@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputIndicator
   hintSpriteRenderer: {fileID: 7435081208302971029}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 1}
   triggerTag: Indication
   blinkInterval: 0.12
   blinkCount: 3
