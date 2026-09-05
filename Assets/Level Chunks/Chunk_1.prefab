@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8058400899153846705, guid: ec455d26a24aa0140ab8d5c77a0f5092, type: 3}
       propertyPath: m_Name
-      value: Chunk_Template
+      value: Chunk_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
