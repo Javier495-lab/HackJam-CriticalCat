@@ -1,13 +1,12 @@
+using System.Collections;
 using UnityEngine;
 
 public class CharacterAnimation : MonoBehaviour
 {
 	[SerializeField] private PlayerSplineFollower playerSplineFollower; 
 	[SerializeField] private Animator animator;
-	[SerializeField] private float verticalSpeed;
-	[SerializeField] private float jumpThreshold = 1f;
-	[SerializeField] private float fallThreshold = -1f;
 	private float previousY;
+	private bool isJumping = false;
 
 	private void Awake()
 	{
@@ -16,19 +15,26 @@ public class CharacterAnimation : MonoBehaviour
 
 	private void Update()
 	{
-		verticalSpeed = (transform.position.y - previousY) / Time.deltaTime;
-		previousY = transform.position.y;
 		animator.SetFloat("Velocity", playerSplineFollower.GetSpeedMultiplier());
-		TriggerAnimations();
 	}
 
-	private void TriggerAnimations()
+	private void OnTriggerEnter(Collider other)
 	{
-		if (verticalSpeed > jumpThreshold)
-			animator.SetTrigger("Jump");
-		else if (verticalSpeed < fallThreshold)
-			animator.SetTrigger("Fall");
-		else
-			animator.SetTrigger("Run");
+		Debug.Log("Holita");
+		if (other.tag == "JumpTrigger")
+		{
+			Debug.Log("Trigger");
+			if (!isJumping)
+			{
+				isJumping = true;
+				animator.SetTrigger("Jump");
+			}
+			else
+			{
+				isJumping = false;
+				animator.SetTrigger("Land");
+			}
+
+		}
 	}
 }
