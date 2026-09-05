@@ -15,9 +15,9 @@ public class Chunk : MonoBehaviour
 		}
 	}
 
-	public Spline GetSpline()
+	public SplineContainer GetSpline()
 	{
-		return splineContainer != null ? splineContainer.Spline : null;
+		return splineContainer;
 	}
 
 	public Vector3 GetStartPoint()

@@ -21,7 +21,7 @@ public class LevelGenerator : MonoBehaviour
 
 	private GameObject previousChunk;
 
-	public IReadOnlyList<GameObject> GetActiveChunks()
+	public List<GameObject> GetActiveChunks()
 	{
 		return activeChunks;
 	}
