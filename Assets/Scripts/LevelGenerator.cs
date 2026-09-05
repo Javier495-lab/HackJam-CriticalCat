@@ -55,7 +55,7 @@ public class LevelGenerator : MonoBehaviour
 	{
 		for (int i = 0; i < ChunkList.Count; i++)
 		{
-			for (int x = 0; x < 2; x++)
+			for (int x = 0; x < 3; x++)
 			{
 				GameObject newChunk = Instantiate(ChunkList[i]);
 				newChunk.SetActive(false);

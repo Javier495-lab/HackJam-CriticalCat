@@ -9,7 +9,7 @@ public class PlayerSplineFollower : MonoBehaviour
 	[SerializeField] private LevelGenerator levelGenerator;
 	[Header("Runner Behaviour")]
 	[SerializeField] private GameObject runner;
-	public float moveSpeed = 1f;
+	private float moveSpeed = 1f;
 	[SerializeField] private float speedMultiplier = 1f;
 	public float rotationSpeed = 5f;
 	[SerializeField] private AnimationCurve velocityCurve;
@@ -44,9 +44,19 @@ public class PlayerSplineFollower : MonoBehaviour
 	private void FindNextSpline()
 	{
 		var activeChunks = levelGenerator.GetActiveChunks();
+		int nextIndex = 0;
+		if (!activeChunks.Contains(currentChunk.gameObject))
+		{
+			SwitchToSpline(activeChunks[nextIndex].GetComponent<Chunk>());
+		}
+		else
+		{
 			int currentIndex = activeChunks.FindIndex(chunk =>
 				chunk.GetComponent<Chunk>() == currentChunk);
-		int nextIndex = currentIndex + 1;
+			if (activeChunks.Count() > currentIndex + 1)
+				nextIndex = currentIndex;
+			nextIndex = currentIndex + 1;
+		}
 				
 		SwitchToSpline(activeChunks[nextIndex].GetComponent<Chunk>());
 	}
@@ -57,7 +67,9 @@ public class PlayerSplineFollower : MonoBehaviour
 		Vector3 targetPosition = spline.EvaluatePosition(currentDistance);
 
 		// Move the character towards the target position on the spline
-		runner.transform.position = Vector3.MoveTowards(runner.transform.position, targetPosition, moveSpeed * speedMultiplier * Time.deltaTime);
+		runner.transform.position = Vector3.MoveTowards(runner.transform.position,
+						targetPosition,
+						LevelManager.Instance.GetCurrentLevelVelocity() * speedMultiplier * Time.deltaTime);
 
 		// Calculate the target rotation on the spline
 		Vector3 targetDirection = spline.EvaluateTangent(currentDistance);
@@ -78,7 +90,8 @@ public class PlayerSplineFollower : MonoBehaviour
 		{
 			// Adjust the movement based on the length of the spline
 			float splineLength = spline.CalculateLength();
-			float movement = moveSpeed * speedMultiplier * Time.deltaTime / splineLength;
+			float movement = LevelManager.Instance.GetCurrentLevelVelocity() * speedMultiplier *
+							Time.deltaTime / splineLength;
 			currentDistance += movement;
 		}
 	}

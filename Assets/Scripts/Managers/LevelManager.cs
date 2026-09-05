@@ -4,7 +4,6 @@ public class LevelManager : MonoBehaviour
 {
 	public static LevelManager Instance;
 	[SerializeField] private float currentLevelVelocity;
-	[SerializeField] public GameObject player;
 
 	private void Awake()
 	{
@@ -20,16 +19,6 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 
-	private void Update()
-	{
-		
-	}
-
-	private void PlayerAlongSpline()
-	{
-		
-	}
-
 	public float GetCurrentLevelVelocity()
 	{
 		return currentLevelVelocity;
@@ -38,10 +27,5 @@ public class LevelManager : MonoBehaviour
 	public void SetCurrentLevelVelocity(float velocity)
 	{
 		currentLevelVelocity = velocity;
-	}
-
-	public void UnloadChunk()
-	{
-		
 	}
 }
