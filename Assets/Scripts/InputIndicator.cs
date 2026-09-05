@@ -4,7 +4,7 @@ using System.Collections;
 public class InputIndicator : MonoBehaviour
 {
     [Header("Configuración del Sprite")]
-    private SpriteRenderer hintSpriteRenderer;
+    public SpriteRenderer hintSpriteRenderer;
     [Tooltip("Distancia relativa a la que flotará el indicador sobre el prefab")]
     [SerializeField] private Vector3 offset = new Vector3(0, 1.5f, 0);
 
@@ -53,7 +53,6 @@ public class InputIndicator : MonoBehaviour
     {
         if (other.CompareTag(triggerTag) && !isShowing)
         {
-            Debug.Log("Cacota " + triggerTag);
             TriggerIndicator();
         }
     }
