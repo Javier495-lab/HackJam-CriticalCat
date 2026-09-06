@@ -48,6 +48,6 @@ public class WinOrLose : MonoBehaviour
 
     private void RestartGame()
     {
-        levelManager.ReloadCurrentScene();
+        levelManager.ShowDeathPanel();
     }
 }

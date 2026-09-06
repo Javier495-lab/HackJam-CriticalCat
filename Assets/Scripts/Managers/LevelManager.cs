@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private float handReturnDuration = 0.2f;
 	[SerializeField] private float handMovementReduction = 0.05f;
 
+	[SerializeField] private GameObject deathPanel;
+
 	private void Awake()
 	{
 		DontDestroyOnLoad(gameObject);
@@ -161,5 +163,15 @@ public class LevelManager : MonoBehaviour
 	public void SetCurrentLevelVelocity(float velocity)
 	{
 		currentLevelVelocity = velocity;
+	}
+
+	public void ShowDeathPanel()
+	{
+		deathPanel.SetActive(true);
+	}
+
+	public void ExitGame()
+	{
+		Application.Quit();
 	}
 }
