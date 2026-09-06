@@ -3,6 +3,7 @@ using Unity.Mathematics;
 using UnityEngine.Splines;
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class PlayerSplineFollower : MonoBehaviour
 {
@@ -22,9 +23,14 @@ public class PlayerSplineFollower : MonoBehaviour
 	public bool isDead = false;
 	[SerializeField] private float switchSplineThreshold = 0.99f;
 	
-	void Start()
+	private IEnumerator Start()
 	{
 		isDead = false;
+		
+		while(levelGenerator.GetActiveChunks().Count < 1 || levelGenerator.GetActiveChunks()[0] == null)
+		{
+			yield return null;
+		}
 		currentChunk = levelGenerator.GetActiveChunks()[0].GetComponent<Chunk>();
 		spline = currentChunk.GetSpline();
 	}
@@ -63,6 +69,8 @@ public class PlayerSplineFollower : MonoBehaviour
 
 	private void PlayerFollowSpline()
 	{
+		if (spline == null)
+			return ;
 		// Calculate the target position on the spline
 		Vector3 targetPosition = spline.EvaluatePosition(currentDistance);
 
