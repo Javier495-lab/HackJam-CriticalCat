@@ -5,13 +5,7 @@ public class CharacterAnimation : MonoBehaviour
 {
 	[SerializeField] private PlayerSplineFollower playerSplineFollower; 
 	[SerializeField] private Animator animator;
-	private float previousY;
 	private bool isJumping = false;
-
-	private void Awake()
-	{
-		previousY = transform.position.y;
-	}
 
 	private void Update()
 	{
