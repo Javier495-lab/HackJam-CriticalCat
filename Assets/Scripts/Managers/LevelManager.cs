@@ -6,6 +6,7 @@ using UnityEngine.Video;
 public class LevelManager : MonoBehaviour
 {
 	public static LevelManager Instance;
+	[SerializeField] private float levelVelocity = 5f;
 	[SerializeField] private float currentLevelVelocity;
 	[SerializeField] private GameObject canvas;
 	[SerializeField] private RawImage canvasVideo;
@@ -25,7 +26,7 @@ public class LevelManager : MonoBehaviour
 		{
 			Destroy(this);
 		}
-		
+		currentLevelVelocity = 0;
 	}
 
 	private void SetLoopVideo()
@@ -37,6 +38,7 @@ public class LevelManager : MonoBehaviour
 
 	public void OnPlayButton()
 	{
+		currentLevelVelocity = levelVelocity;
 		videoPlayer.Stop();
 		videoPlayer.frame = 0;
 		videoPlayer.clip = introMovie;
@@ -47,7 +49,6 @@ public class LevelManager : MonoBehaviour
 
 	private void OnVideoEnded(VideoPlayer source)
 	{
-		Debug.Log("Video ended.");
 		StartCoroutine(FadeOutRawImage());
 	}
 

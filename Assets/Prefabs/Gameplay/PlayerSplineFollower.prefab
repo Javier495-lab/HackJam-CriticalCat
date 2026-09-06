@@ -46,8 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSplineFollower
   levelGenerator: {fileID: 0}
   runner: {fileID: 0}
-  moveSpeed: 5
-  speedMultiplier: 1
+  speedMultiplier: 5
   rotationSpeed: 0
   velocityCurve:
     serializedVersion: 2

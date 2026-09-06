@@ -226,46 +226,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGenerator
       objectReference: {fileID: 0}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: activeChunksLenght
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: ChunkList.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: chunkDeletionDistance
-      value: -200
-      objectReference: {fileID: 0}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[1]'
-      value: 
-      objectReference: {fileID: 5638999946289198513, guid: 9e7950d1ccb6edd419f039ea168bd61e, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[2]'
-      value: 
-      objectReference: {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[3]'
-      value: 
-      objectReference: {fileID: 5638999946289198513, guid: 9e7950d1ccb6edd419f039ea168bd61e, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[4]'
-      value: 
-      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[5]'
-      value: 
-      objectReference: {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[6]'
-      value: 
-      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
-    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
-      propertyPath: 'ChunkList.Array.data[7]'
-      value: 
-      objectReference: {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
     - target: {fileID: 8824273612737667201, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.2681
@@ -567,18 +527,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1771983659}
     - target: {fileID: 4559153113412410181, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9773
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559153113412410181, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9773
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559153113412410181, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9773
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559153113412410181, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.4
       objectReference: {fileID: 0}
@@ -621,10 +569,6 @@ PrefabInstance:
     - target: {fileID: 8716236643407572528, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
       propertyPath: m_Name
       value: Runner
-      objectReference: {fileID: 0}
-    - target: {fileID: 8716236643407572528, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -691,10 +635,6 @@ PrefabInstance:
       propertyPath: levelGenerator
       value: 
       objectReference: {fileID: 1531110938}
-    - target: {fileID: 8461276705333805755, guid: a0d520d48f0581f4d9a5a1b5426c971d, type: 3}
-      propertyPath: speedMultiplier
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8461276705333805755, guid: a0d520d48f0581f4d9a5a1b5426c971d, type: 3}
       propertyPath: xTargetPosition
       value: 

@@ -115,7 +115,13 @@ public class LevelGenerator : MonoBehaviour
 		}
 		else
 		{
-			newChunk.transform.position = previousChunk.GetComponent<Chunk>().GetEndPoint();
+			Vector3 previousEndPoint = previousChunk.GetComponent<Chunk>().GetEndPoint();
+			newChunk.transform.position = previousEndPoint;
+
+			// Move the chunk so its actual start point, rather than its pivot,
+			// matches the previous chunk's endpoint.
+			Vector3 startPoint = newChunk.GetComponent<Chunk>().GetStartPoint();
+			newChunk.transform.position += previousEndPoint - startPoint;
 		}
 		newChunk.gameObject.SetActive(true);
 		previousChunk = newChunk;

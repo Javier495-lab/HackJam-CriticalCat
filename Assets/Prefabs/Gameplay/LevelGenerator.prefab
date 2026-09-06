@@ -47,8 +47,14 @@ MonoBehaviour:
   ChunkList:
   - {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
   - {fileID: 5638999946289198513, guid: 9e7950d1ccb6edd419f039ea168bd61e, type: 3}
+  - {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
+  - {fileID: 5638999946289198513, guid: 9e7950d1ccb6edd419f039ea168bd61e, type: 3}
+  - {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+  - {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
+  - {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+  - {fileID: 5638999946289198513, guid: 0bc7bf2f17d43e34d9dd112f8c01a655, type: 3}
   hiddenChunks: []
   activeChunks: []
-  activeChunksLenght: 7
-  chunkDeletionDistance: -30
+  activeChunksLenght: 10
+  chunkDeletionDistance: -200
   resetPositionDistance: -100

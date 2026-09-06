@@ -20,10 +20,8 @@ public class CharacterAnimation : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Holita");
 		if (other.tag == "JumpTrigger")
 		{
-			Debug.Log("Trigger");
 			if (!isJumping)
 			{
 				isJumping = true;
