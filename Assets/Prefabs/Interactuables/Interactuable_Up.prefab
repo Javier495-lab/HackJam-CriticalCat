@@ -463,6 +463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3134267836146244807, guid: d67b72d755fbff3ac9ba3207fb67285d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e67de6cb2fd27cc4699bf5988b0d119e, type: 2}
     - target: {fileID: 919132149155446097, guid: d67b72d755fbff3ac9ba3207fb67285d, type: 3}
       propertyPath: m_Name
       value: Animacion_alcantarilla
