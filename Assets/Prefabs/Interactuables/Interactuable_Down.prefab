@@ -173,6 +173,9 @@ MonoBehaviour:
   autoSnapThreshold: 0.8
   startAutoCompleteSpeed: 1
   finalAutoCompleteSpeed: 0.05
+  useCodeMovement: 0
+  moveDirection: {x: 0, y: 1, z: 0}
+  moveDistance: 2
   isCompleted: 0
 --- !u!114 &1190871625786109963
 MonoBehaviour:
@@ -205,7 +208,7 @@ MonoBehaviour:
   triggerTag: Indication
   blinkInterval: 0.12
   blinkCount: 3
-  displayDuration: 0.5
+  displayDuration: 0.8
 --- !u!1 &9019364231217641542
 GameObject:
   m_ObjectHideFlags: 0

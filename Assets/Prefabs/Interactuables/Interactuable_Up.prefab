@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2726563104540660715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -3, z: 0.63234}
+  m_LocalPosition: {x: 0.28, y: -3, z: 2.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -232,7 +232,7 @@ MonoBehaviour:
   triggerTag: Indication
   blinkInterval: 0.12
   blinkCount: 3
-  displayDuration: 0.5
+  displayDuration: 0.8
 --- !u!1 &7627700200004781941
 GameObject:
   m_ObjectHideFlags: 0

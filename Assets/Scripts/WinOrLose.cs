@@ -7,6 +7,7 @@ public class WinOrLose : MonoBehaviour
     public PlayerSplineFollower splineFollower;
     private bool canSurpass;
     private Animator animator;
+    public LevelManager levelManager;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class WinOrLose : MonoBehaviour
             splineFollower.isDead = true;
             animator.SetTrigger("Dead");
             Debug.Log("GameOver");
+            Invoke(nameof(RestartGame), 2f);
         }
         else
         {
@@ -42,5 +44,10 @@ public class WinOrLose : MonoBehaviour
     {
         if (!splineFollower.isDead) return;
         transform.Translate(Vector3.right * LevelManager.Instance.GetCurrentLevelVelocity() * -1 * Time.deltaTime);
+    }
+
+    private void RestartGame()
+    {
+        levelManager.ReloadCurrentScene();
     }
 }
