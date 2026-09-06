@@ -1249,6 +1249,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'ChunkList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'ChunkList.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'ChunkList.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'ChunkList.Array.data[5]'
+      value: 
+      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'ChunkList.Array.data[7]'
+      value: 
+      objectReference: {fileID: 7555762538078260465, guid: d4589f4116a151c44b7c0a616b235d63, type: 3}
     - target: {fileID: 8824273612737667201, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1370,6 +1390,10 @@ PrefabInstance:
       propertyPath: playerSplineFollower
       value: 
       objectReference: {fileID: 1144268213}
+    - target: {fileID: 3688946529429793346, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4559153113412410181, guid: be4cc790fc1e4dd4b9c20ef52083d9e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
