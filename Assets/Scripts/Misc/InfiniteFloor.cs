@@ -17,6 +17,6 @@ public class InfiniteFloor : MonoBehaviour
 	private void UpdateScrollVelocity()
 	{
 		scrollVelocity = LevelManager.Instance.GetCurrentLevelVelocity();
-		myMat.SetFloat("_ScrollVelocity", scrollVelocity / 7.5f);
+		myMat.SetFloat("_ScrollVelocity", scrollVelocity / 11f);
 	}
 }

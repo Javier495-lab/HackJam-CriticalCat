@@ -160,9 +160,12 @@ MonoBehaviour:
   maxDragPixels: 400
   circleDirection: 0
   totalDegreesForCompletion: 360
-  autoSnapThreshold: 0.8
+  autoSnapThreshold: 0.67
   startAutoCompleteSpeed: 1
   finalAutoCompleteSpeed: 0.05
+  useCodeMovement: 0
+  moveDirection: {x: 0, y: 1, z: 0}
+  moveDistance: 2
   isCompleted: 0
 --- !u!114 &906805819878896172
 MonoBehaviour:

@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
 
 	[SerializeField] private GameObject deathPanel;
 
+	[SerializeField]private AudioSource soundtrack;
+
 	private void Awake()
 	{
 		DontDestroyOnLoad(gameObject);
@@ -44,6 +46,7 @@ public class LevelManager : MonoBehaviour
 	private void Start()
 	{
 		handOriginalPosition = hand.transform.position;
+		soundtrack = GetComponent<AudioSource>();
 	}
 
 	private void Update()
@@ -130,6 +133,13 @@ public class LevelManager : MonoBehaviour
 		videoPlayer.Play();
 		videoPlayer.isLooping = false;
 		videoPlayer.loopPointReached += OnVideoEnded;
+		StartCoroutine(PlaySong());
+	}
+
+	private IEnumerator PlaySong()
+	{
+		yield return new WaitForSecondsRealtime(2.5f);
+		soundtrack.Play();
 	}
 
 	private void OnVideoEnded(VideoPlayer source)
@@ -168,6 +178,7 @@ public class LevelManager : MonoBehaviour
 	public void ShowDeathPanel()
 	{
 		deathPanel.SetActive(true);
+		soundtrack.Stop();
 	}
 
 	public void ExitGame()
