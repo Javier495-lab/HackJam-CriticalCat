@@ -25,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689922088682996242}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.39959943, w: 0.91668993}
-  m_LocalPosition: {x: 0.00000023841858, y: 0.139, z: 0.869}
-  m_LocalScale: {x: 0.17799, y: 0.17799, z: 0.17799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.205, z: 0.714}
+  m_LocalScale: {x: 0.3583132, y: 0.3583132, z: 0.3583132}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3092556239855435716}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.106}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &815408618069174293
 SpriteRenderer:
   serializedVersion: 2
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 44de0743681b89d499c53daf0fb37e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39b5a02cb7246f34c9dcfc43b91eba62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,8 +117,8 @@ Transform:
   m_GameObject: {fileID: 985599512807855203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.00000011921, z: -0.78}
-  m_LocalScale: {x: 0.16915, y: 0.16915, z: 0.16915}
+  m_LocalPosition: {x: 0, y: 0, z: 0.652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3092556239855435716}
@@ -172,7 +172,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 601738cec06f2ba4fa1434cff7232562, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 898c8f8be3d9a5846879375eb0004305, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -374,8 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputIndicator
   hintSpriteRenderer: {fileID: 815408618069174293}
-  offset: {x: 0, y: 0, z: 1}
   triggerTag: Indication
   blinkInterval: 0.12
   blinkCount: 3
-  displayDuration: 1
+  displayDuration: 0.5

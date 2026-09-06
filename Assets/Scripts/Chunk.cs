@@ -34,6 +34,11 @@ public class Chunk : MonoBehaviour
 		return startPoint.position;
 	}
 
+	public void SetStartPoint(Vector3 newPosition)
+	{
+		startPoint.position = newPosition;
+    }
+
 	public Vector3 GetEndPoint()
 	{
 		return endPoint.position;
