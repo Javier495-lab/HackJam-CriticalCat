@@ -2189,6 +2189,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: FirstChunks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'FirstChunks.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5638999946289198513, guid: ee6639cdf5006ff46a04e14d216b8d66, type: 3}
+    - target: {fileID: 8700841192490148628, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
+      propertyPath: 'FirstChunks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5638999946289198513, guid: ee6639cdf5006ff46a04e14d216b8d66, type: 3}
     - target: {fileID: 8824273612737667201, guid: a3c4455ffe7dcfd499fa17640722bc09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
