@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -38,6 +39,21 @@ public class LevelManager : MonoBehaviour
 	private void Start()
 	{
 		handOriginalPosition = hand.transform.position;
+	}
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			ReloadCurrentScene();
+		}
+	}
+
+	private void ReloadCurrentScene()
+	{
+		int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+		Destroy(gameObject);
+		SceneManager.LoadScene(currentSceneIndex);
 	}
 
 	public void MoveHand(Vector3 newPosition)
