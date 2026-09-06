@@ -5,6 +5,8 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
 	[Header("Chunk Lists")]
+	[Tooltip("First Chunks to appear")]
+	[SerializeField] private List<GameObject> FirstChunks;
 	[Tooltip("Place here all the chunk prefabs")]
 	[SerializeField] private List<GameObject> ChunkList;
 	[Tooltip("List of hidden but loaded chunks. There's two of each one")]
@@ -86,6 +88,12 @@ public class LevelGenerator : MonoBehaviour
 
 	private void GenerateStartChunks()
 	{
+		GameObject firstChunk = Instantiate(FirstChunks[0]);
+		GameObject secondChunk = Instantiate(FirstChunks[1]);
+		AddActiveChunk(firstChunk);
+		PlaceNewChunk(firstChunk);
+		AddActiveChunk(secondChunk);
+		PlaceNewChunk(secondChunk);
 		while (activeChunks.Count < activeChunksLenght && hiddenChunks.Count > 1)
 		{
 			GenerateChunk();
@@ -102,6 +110,12 @@ public class LevelGenerator : MonoBehaviour
 
 	private void RemoveActiveChunk(GameObject chunk)
 	{
+		if (chunk.name == "Chunk_First(Clone)")
+		{
+			activeChunks.Remove(chunk);
+			Destroy(chunk);
+			return ;
+		}
 		chunk.SetActive(false);
 		hiddenChunks.Add(chunk);
 		activeChunks.Remove(chunk);
