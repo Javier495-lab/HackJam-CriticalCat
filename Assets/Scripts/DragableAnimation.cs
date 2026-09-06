@@ -27,7 +27,7 @@ public class DragableAnimation : MonoBehaviour
     }
 
     [Header("Referencias")]
-    [SerializeField] private Animator animator;
+    public Animator animator;
     [SerializeField] private string parameterName = "Progress";
     [SerializeField] private TextMeshProUGUI progressText;
 
@@ -55,6 +55,11 @@ public class DragableAnimation : MonoBehaviour
     [Tooltip("Velocidad final al alcanzar el 100% de la animación")]
     [SerializeField] private float finalAutoCompleteSpeed = 0.05f;
 
+    [SerializeField] private bool useCodeMovement = false;
+    [SerializeField] private Vector3 moveDirection = Vector3.up;
+    [SerializeField] private float moveDistance = 2.0f;
+    private Vector3 initialLocalPosition;
+
     private Vector2 startMousePosition;
     private float startProgress;
     private float currentProgress = 0f;
@@ -62,7 +67,6 @@ public class DragableAnimation : MonoBehaviour
     private float lastCircleAngle;
     private bool isAutocompleting = false;
     public bool isCompleted = false;
-    private Renderer targetRenderer;
 
     private Collider objectCollider;
     private Color originalColor;
@@ -70,20 +74,7 @@ public class DragableAnimation : MonoBehaviour
     private void Awake()
     {
         objectCollider = GetComponent<Collider>();
-
-        if (targetRenderer == null)
-        {
-            targetRenderer = GetComponent<Renderer>();
-        }
-
-        // Guardamos el color original para poder restaurarlo después
-        if (targetRenderer != null)
-        {
-            originalColor = targetRenderer.material.color;
-
-            // NOTA: Si estás en URP y usas _BaseColor, usa esta línea:
-            // originalColor = targetRenderer.material.GetColor("_BaseColor");
-        }
+        initialLocalPosition = transform.localPosition;
     }
 
     private void Start()
@@ -251,7 +242,7 @@ public class DragableAnimation : MonoBehaviour
         isCompleted = true;
         isAutocompleting = false;
         currentProgress = 1.0f;
-        targetRenderer.material.color = Color.white;
+        animator.SetTrigger("Interaction");
 
         UpdateAnimationAndUI();
 
@@ -262,7 +253,12 @@ public class DragableAnimation : MonoBehaviour
     {
         if (animator != null)
         {
-//            animator.SetFloat(parameterName, currentProgress);
+            animator.SetFloat(parameterName, currentProgress);
+        }
+
+        if (useCodeMovement)
+        {
+            transform.localPosition = initialLocalPosition + (moveDirection.normalized * (moveDistance * currentProgress));
         }
 
         if (progressText != null)
@@ -283,15 +279,6 @@ public class DragableAnimation : MonoBehaviour
 
         // 3. Forzar actualización del Animator (Blend Tree a 0) y del UI
         UpdateAnimationAndUI();
-
-        // 4. Devolver el material a su color original
-        if (targetRenderer != null)
-        {
-            targetRenderer.material.color = originalColor;
-
-            // NOTA: Si usas URP, usa esta línea en su lugar:
-            // targetRenderer.material.SetColor("_BaseColor", originalColor);
-        }
 
         // 5. Rehabilitar el collider por si se había desactivado al completar
         if (objectCollider != null)

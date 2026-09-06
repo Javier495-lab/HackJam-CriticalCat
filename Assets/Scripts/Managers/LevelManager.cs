@@ -73,7 +73,7 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 
-	private void ReloadCurrentScene()
+	public void ReloadCurrentScene()
 	{
 		int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 		Destroy(gameObject);

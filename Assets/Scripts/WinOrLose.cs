@@ -6,7 +6,14 @@ public class WinOrLose : MonoBehaviour
     private DragableAnimation interactuableScript;
     public PlayerSplineFollower splineFollower;
     private bool canSurpass;
- 
+    private Animator animator;
+    public LevelManager levelManager;
+
+    private void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(triggerTag))
@@ -23,7 +30,13 @@ public class WinOrLose : MonoBehaviour
         if (!canSurpass)
         {
             splineFollower.isDead = true;
+            animator.SetTrigger("Dead");
             Debug.Log("GameOver");
+            Invoke(nameof(RestartGame), 2f);
+        }
+        else
+        {
+            interactuableScript.animator.SetTrigger("Interaction");
         }
     }
 
@@ -31,5 +44,10 @@ public class WinOrLose : MonoBehaviour
     {
         if (!splineFollower.isDead) return;
         transform.Translate(Vector3.right * LevelManager.Instance.GetCurrentLevelVelocity() * -1 * Time.deltaTime);
+    }
+
+    private void RestartGame()
+    {
+        levelManager.ReloadCurrentScene();
     }
 }
