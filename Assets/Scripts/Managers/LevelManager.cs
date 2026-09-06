@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private VideoPlayer videoPlayer;
 	[SerializeField] private VideoClip parentsLoop;
 	[SerializeField] private VideoClip introMovie;
+	[SerializeField] private AnimationCurve levelVelocityCurve;
+	private float levelVelocityCurveTime;
+	private bool isLevelVelocityIncreasing;
 
 	[Header("Hand Movement")]
 	[SerializeField] private GameObject hand;
@@ -46,6 +49,27 @@ public class LevelManager : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.R))
 		{
 			ReloadCurrentScene();
+		}
+
+		UpdateLevelVelocity();
+		
+	}
+
+	private void UpdateLevelVelocity()
+	{
+		if (!isLevelVelocityIncreasing || levelVelocityCurve == null || levelVelocityCurve.length == 0)
+		{
+			return;
+		}
+
+		float curveDuration = levelVelocityCurve.keys[levelVelocityCurve.length - 1].time;
+		levelVelocityCurveTime += Time.deltaTime;
+		currentLevelVelocity = levelVelocity + levelVelocityCurve.Evaluate(levelVelocityCurveTime);
+
+		if (levelVelocityCurveTime >= curveDuration)
+		{
+			currentLevelVelocity = levelVelocity + levelVelocityCurve.Evaluate(curveDuration);
+			isLevelVelocityIncreasing = false;
 		}
 	}
 
@@ -96,6 +120,8 @@ public class LevelManager : MonoBehaviour
 	public void OnPlayButton()
 	{
 		currentLevelVelocity = levelVelocity;
+		levelVelocityCurveTime = 0f;
+		isLevelVelocityIncreasing = levelVelocityCurve != null && levelVelocityCurve.length > 0;
 		videoPlayer.Stop();
 		videoPlayer.frame = 0;
 		videoPlayer.clip = introMovie;

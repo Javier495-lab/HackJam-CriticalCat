@@ -2467,6 +2467,54 @@ PrefabInstance:
       propertyPath: handMovementReduction
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].time
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].value
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[0].inSlope
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].inSlope
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[0].outSlope
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].outSlope
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338812891345348054, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
+      propertyPath: levelVelocityCurve.m_Curve.Array.data[1].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 5978620645139530055, guid: 9c6ad4ef4961fc54db31895db328e33d, type: 3}
       propertyPath: m_Name
       value: LevelManager
