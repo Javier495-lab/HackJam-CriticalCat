@@ -27,7 +27,7 @@ public class DragableAnimation : MonoBehaviour
     }
 
     [Header("Referencias")]
-    [SerializeField] private Animator animator;
+    public Animator animator;
     [SerializeField] private string parameterName = "Progress";
     [SerializeField] private TextMeshProUGUI progressText;
 

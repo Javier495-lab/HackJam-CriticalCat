@@ -1,0 +1,1548 @@
+fileFormatVersion: 2
+guid: b12c10aa080da324f8ac6dda07c40b4e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_0
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 7041
+        width: 749
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff25de4141db7c4f86f17320eaf7a40
+      internalID: -1402478657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_1
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 7017
+        width: 594
+        height: 818
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0cad994c6d9fd448640db10f8e326c
+      internalID: 80572591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_2
+      rect:
+        serializedVersion: 2
+        x: 3692
+        y: 7001
+        width: 749
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fcba7b78ceeac4488e1e5e7c8bd361
+      internalID: 291711123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_3
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 7021
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d9935f4c529914e9ec5ee945a14b4f
+      internalID: -1696781563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_4
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 7029
+        width: 96
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b81f5c5c88314db37ba67530125ba
+      internalID: 627373684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_5
+      rect:
+        serializedVersion: 2
+        x: 5195
+        y: 7009
+        width: 924
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd39d0add922b94da5deb07be0d98ea
+      internalID: 1831604311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_6
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 7046
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6803998c8e532f4fa673798a66b2c0e
+      internalID: -440640900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_7
+      rect:
+        serializedVersion: 2
+        x: 6196
+        y: 7033
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f4dcb7904cf7f4cb37bab575593af4
+      internalID: -1705774604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_8
+      rect:
+        serializedVersion: 2
+        x: 7084
+        y: 6964
+        width: 757
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec78344c4cbf72479234a3cb5e7fcd1
+      internalID: 1989592267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_9
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 5327
+        width: 761
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8106ba46b720b840ae53af816ba4e4c
+      internalID: 1486303100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_10
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 5319
+        width: 601
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d371be159645c45a56c7002523056e
+      internalID: -1594529015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_11
+      rect:
+        serializedVersion: 2
+        x: 3883
+        y: 5303
+        width: 655
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0457000099cb0e4aad235a337bdbf5c
+      internalID: -265878518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_12
+      rect:
+        serializedVersion: 2
+        x: 5459
+        y: 5327
+        width: 757
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e516c4eb551dc459e68cef9ad0c731
+      internalID: 1855782967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_13
+      rect:
+        serializedVersion: 2
+        x: 7234
+        y: 5319
+        width: 599
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b2a9ef1e6e05047a6bc01ea147171e
+      internalID: -222667961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_14
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 5291
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa45cf1967993c4e97c4b8838cea698
+      internalID: 1681635801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_15
+      rect:
+        serializedVersion: 2
+        x: 6196
+        y: 5291
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd9cbaace8683e4994f07c124077b72
+      internalID: -1305345558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_16
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 3638
+        width: 651
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfd7a622c5fb264780c532644d98833
+      internalID: -146110491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_17
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 3646
+        width: 554
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0591518ac23e840bdc7ad0a698ab05
+      internalID: -659316330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_18
+      rect:
+        serializedVersion: 2
+        x: 3899
+        y: 3617
+        width: 591
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34d4c5161eb93643b87e838db3558c7
+      internalID: -2138234938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_19
+      rect:
+        serializedVersion: 2
+        x: 5589
+        y: 3646
+        width: 554
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d53204d7596c5f47bd19b6b6737a9ba
+      internalID: 728862607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_20
+      rect:
+        serializedVersion: 2
+        x: 7234
+        y: 3617
+        width: 591
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef0dbd65b8833441bcf4c1555dd229b
+      internalID: 528494692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_21
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2005
+        width: 750
+        height: 615
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eef2c25c5d9c5e42a5a4e4b4f096358
+      internalID: 1915408374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_22
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 2022
+        width: 73
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4564ea96a89dd1f4ea0dbd61ca558d69
+      internalID: 658667348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_23
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 2030
+        width: 94
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094fd0de956d90746828eebd891ef248
+      internalID: 169312207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_24
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 2013
+        width: 924
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5e2f351963d5347a6c3f80b6d54711
+      internalID: 1312823369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_25
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 2046
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8d97d8d53dba4449e9fa61937f1d79
+      internalID: 41150796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_26
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 2034
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b6ca783e720894cbeba1981c29ee3e
+      internalID: 1355086550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_27
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 2022
+        width: 75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0496ca0d54a6e42acb7538df672b4f
+      internalID: -1334429077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_28
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 2030
+        width: 95
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319b07388de85d44e91dae71f23edaa6
+      internalID: -79767178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_29
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 2013
+        width: 920
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc0ff7601c770544953c827142bb519
+      internalID: -2104278411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_30
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 2046
+        width: 102
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6614447a7ca41764f9bc24a1cd915552
+      internalID: -81630306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_31
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 2034
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c369c2bd415b24489668d795108e333
+      internalID: 1370961126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_32
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 2022
+        width: 73
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e06c3eba9d167e4db32223e81a4f194
+      internalID: 482097388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_33
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 2030
+        width: 94
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe897020663e884f8d19f8a52ef6832
+      internalID: 1203263997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_34
+      rect:
+        serializedVersion: 2
+        x: 5194
+        y: 2013
+        width: 925
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36082937ce7fda498d43f6c34bd6b2e
+      internalID: -418668083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_35
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 2046
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbc837411c073543bcd5facf664dbe3
+      internalID: -1668629459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_36
+      rect:
+        serializedVersion: 2
+        x: 6196
+        y: 2034
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbb8466a223edb4abd8385408f319b2
+      internalID: -445446891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_37
+      rect:
+        serializedVersion: 2
+        x: 6742
+        y: 2022
+        width: 73
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31053a19c445f0d43a4b8583f65551e8
+      internalID: -506647485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_38
+      rect:
+        serializedVersion: 2
+        x: 6815
+        y: 2030
+        width: 93
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7835639f4b3d7414aa16d1c7f13b623a
+      internalID: -1705668886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_39
+      rect:
+        serializedVersion: 2
+        x: 6864
+        y: 2013
+        width: 920
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cd72127bf538c46959a3e8fd577dd0
+      internalID: -593888313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_40
+      rect:
+        serializedVersion: 2
+        x: 7739
+        y: 2046
+        width: 102
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04db5e9f66d544a40b3e09d5d29cf95e
+      internalID: 1192856811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_41
+      rect:
+        serializedVersion: 2
+        x: 7862
+        y: 2034
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eefbf790f1ba8c4c98290d2570ddfe6
+      internalID: -512214271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_42
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 356
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6327c9b5e000442a8cd314403b7dbd
+      internalID: 1724399498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_43
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 364
+        width: 97
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2894600263b447449dbbe5cef2a12ce
+      internalID: -1825413593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_44
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 348
+        width: 924
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6298bb155b0e3d45b22655962675568
+      internalID: 1777026237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_45
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 381
+        width: 103
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085d99b9887262f42a5286d9774ef931
+      internalID: 1668602421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_46
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 369
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9615e9415bc91419495f3d19ccbedb
+      internalID: 1040911132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_47
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 356
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b24e8ec48a6974b8246b5b3c39cdbf
+      internalID: -480539736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_48
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 364
+        width: 94
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541d9197c2d44e149a04f8eafe2e2cee
+      internalID: -473726961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_49
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 348
+        width: 924
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ea2d3d9e5f71e49b500eb38ff0c610
+      internalID: 455683415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_50
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 381
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5845977cb1661a940b61e3dd84f78438
+      internalID: 1898882802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_51
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 369
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ecb9c4a3902571449b64ed74c5a323d
+      internalID: 1157356067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_52
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 356
+        width: 170
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3cc08d39ee42a4889acff9f387f134
+      internalID: -577324823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_53
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 348
+        width: 920
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e663d668c85bb439e07ed62cfb6f3a
+      internalID: -479765484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_54
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 381
+        width: 102
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716eb3622e68eaa4aaf47ffdb2114f4e
+      internalID: 1980595384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_55
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 369
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed74e2b650ac74b438b7e20b80a8245b
+      internalID: -725455844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_56
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 356
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d53447433f889a43804b1b01299cceb
+      internalID: 1820319518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_57
+      rect:
+        serializedVersion: 2
+        x: 5145
+        y: 364
+        width: 94
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20c7e104879e9d479059ce3ff66f409
+      internalID: -1908360858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_58
+      rect:
+        serializedVersion: 2
+        x: 5194
+        y: 348
+        width: 925
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba0dc02ea3cbd44b83d1cd60e0402be
+      internalID: -1853433512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_59
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 381
+        width: 101
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a5b42383266f549aeef394d063309b
+      internalID: -667629635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salto2_Caida_Suelo_60
+      rect:
+        serializedVersion: 2
+        x: 6196
+        y: 369
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ce11fbb34cd4e40a3bd9f9b233de6b
+      internalID: -2088302710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 060f5481481332544958aa9f1822d2b9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Salto2_Caida_Suelo_0: -1402478657
+      Salto2_Caida_Suelo_1: 80572591
+      Salto2_Caida_Suelo_10: -1594529015
+      Salto2_Caida_Suelo_11: -265878518
+      Salto2_Caida_Suelo_12: 1855782967
+      Salto2_Caida_Suelo_13: -222667961
+      Salto2_Caida_Suelo_14: 1681635801
+      Salto2_Caida_Suelo_15: -1305345558
+      Salto2_Caida_Suelo_16: -146110491
+      Salto2_Caida_Suelo_17: -659316330
+      Salto2_Caida_Suelo_18: -2138234938
+      Salto2_Caida_Suelo_19: 728862607
+      Salto2_Caida_Suelo_2: 291711123
+      Salto2_Caida_Suelo_20: 528494692
+      Salto2_Caida_Suelo_21: 1915408374
+      Salto2_Caida_Suelo_22: 658667348
+      Salto2_Caida_Suelo_23: 169312207
+      Salto2_Caida_Suelo_24: 1312823369
+      Salto2_Caida_Suelo_25: 41150796
+      Salto2_Caida_Suelo_26: 1355086550
+      Salto2_Caida_Suelo_27: -1334429077
+      Salto2_Caida_Suelo_28: -79767178
+      Salto2_Caida_Suelo_29: -2104278411
+      Salto2_Caida_Suelo_3: -1696781563
+      Salto2_Caida_Suelo_30: -81630306
+      Salto2_Caida_Suelo_31: 1370961126
+      Salto2_Caida_Suelo_32: 482097388
+      Salto2_Caida_Suelo_33: 1203263997
+      Salto2_Caida_Suelo_34: -418668083
+      Salto2_Caida_Suelo_35: -1668629459
+      Salto2_Caida_Suelo_36: -445446891
+      Salto2_Caida_Suelo_37: -506647485
+      Salto2_Caida_Suelo_38: -1705668886
+      Salto2_Caida_Suelo_39: -593888313
+      Salto2_Caida_Suelo_4: 627373684
+      Salto2_Caida_Suelo_40: 1192856811
+      Salto2_Caida_Suelo_41: -512214271
+      Salto2_Caida_Suelo_42: 1724399498
+      Salto2_Caida_Suelo_43: -1825413593
+      Salto2_Caida_Suelo_44: 1777026237
+      Salto2_Caida_Suelo_45: 1668602421
+      Salto2_Caida_Suelo_46: 1040911132
+      Salto2_Caida_Suelo_47: -480539736
+      Salto2_Caida_Suelo_48: -473726961
+      Salto2_Caida_Suelo_49: 455683415
+      Salto2_Caida_Suelo_5: 1831604311
+      Salto2_Caida_Suelo_50: 1898882802
+      Salto2_Caida_Suelo_51: 1157356067
+      Salto2_Caida_Suelo_52: -577324823
+      Salto2_Caida_Suelo_53: -479765484
+      Salto2_Caida_Suelo_54: 1980595384
+      Salto2_Caida_Suelo_55: -725455844
+      Salto2_Caida_Suelo_56: 1820319518
+      Salto2_Caida_Suelo_57: -1908360858
+      Salto2_Caida_Suelo_58: -1853433512
+      Salto2_Caida_Suelo_59: -667629635
+      Salto2_Caida_Suelo_6: -440640900
+      Salto2_Caida_Suelo_60: -2088302710
+      Salto2_Caida_Suelo_7: -1705774604
+      Salto2_Caida_Suelo_8: 1989592267
+      Salto2_Caida_Suelo_9: 1486303100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
